@@ -74,17 +74,11 @@ document.addEventListener("DOMContentLoaded", () =>{
     for (let i = 0; i < forms.length; i++) {
         forms[i].addEventListener('submit', function (e) {
             e.preventDefault();
-
             let formData = new FormData(this);
             formData = Object.fromEntries(formData);
-
             ajaxSend(formData);
         });
     };
-
-
-
-
 });
 
 
