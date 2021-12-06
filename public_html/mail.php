@@ -1,11 +1,4 @@
 <?php
-
-  // $name    = (isset($_POST['name'])) ? $_POST['name'] : '';
-  // $email   = (isset($_POST['email'])) ? $_POST['email'] : '';
-  // $tel   = (isset($_POST['tel'])) ? $_POST['tel'] : '';
-  // $message = (isset($_POST['message'])) ? $_POST['message'] : '';
-  // $subject = (isset($_POST['subject'])) ? $_POST['subject'] : '';
-
   $_POST = json_decode(file_get_contents("php://input"), true);
 
   $method = $_SERVER['REQUEST_METHOD'];
@@ -14,49 +7,6 @@
   $project_name = trim($_POST["project_name"]);
   $admin_email  = trim($_POST["admin_email"]);
   $form_subject = trim($_POST["form_subject"]);
-
-  // header('Content-Type: application/json');
-  // if ($name === '') {
-  //   $response =  json_encode(array(
-  //     'message' => 'Поле имени не может быть пустым',
-  //     'code' => 0
-  //   ));
-  //   die($response);
-  // }
-  // if ($tel === '') {
-  //   $response =  json_encode(array(
-  //     'message' => 'Поле телефона не может быть пустым',
-  //     'code' => 0
-  //   ));
-  //   die($response);
-  // }
-  // if ($email === '') {
-  //   $response =  json_encode(array(
-  //     'message' => 'Поле email не может быть пустым',
-  //     'code' => 0
-  //   ));
-  //   die($response);  
-  // } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  //   $response =  json_encode(array(
-  //     'message' => 'Проверьте правильность ввода email',
-  //     'code' => 0
-  //   ));
-  //   die($response);
-  // }
-  // if ($subject === '') {
-  //   $response =  json_encode(array(
-  //     'message' => 'Поле не может быть пустым',
-  //     'code' => 0
-  //   ));
-  //   die($response);
-  // }
-  // if ($message === '') {
-  //   $response =  json_encode(array(
-  //     'message' => 'Напишите чем мы можем вам помочь',
-  //     'code' => 0
-  //   ));
-  //   die($response);
-  // }
 
   foreach ( $_POST as $key => $value ) {
     if ( is_array($value) ) {
@@ -90,7 +40,6 @@
       http_response_code(400);
       echo "Ошибка. Данные не отправлены.";
   };
-
 
   // $content    = "Получен новый запрос на обратный звонок с сайта $url \n Имя: $name \n Email: $email \n Телефон: $email \n Сообщение: $message";
   // $recipient  = "dotikdeveloper@gmail.com";
