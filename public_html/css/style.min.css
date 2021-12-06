@@ -1,0 +1,725 @@
+@import "https://fonts.googleapis.com/css2?family=Pangolin&display=swap";
+
+*
+{
+	/* color:#989798; */
+	font-family:Raleway,sans-serif
+}
+
+::-moz-selection
+{
+	color:#ccc
+}
+
+::selection
+{
+	color:#ccc
+}
+
+a.btn,button.btn,div.btn
+{
+	font-weight:700;
+	background-color:#3fab2d;
+	border:2px solid #3fab2d;
+	color:#fff
+}
+
+a.btn:hover,button.btn:hover,div.btn:hover
+{
+	background-color:#3fab2d;
+	opacity:.75;
+	color:#fff
+}
+
+.section__tittle
+{
+	color:#0075b8;
+	font-weight:500;
+	font-style:italic
+}
+
+.hide
+{
+	display:none!important
+}
+
+@font-face
+{
+	font-family:Jingleberry;
+	src:url(Jingleberry.eot?) format("eot"),url(Jingleberry.woff) format("woff"),url(Jingleberry.ttf) format("truetype"),url(Jingleberry.svg#Jingleberry) format("svg");
+	font-weight:400;
+	font-style:normal
+}
+
+.btn[data-btn=modal]
+{
+	color:#f7f6f1;
+	background-color:#39999c;
+	font-family:Pangolin,cursive;
+	letter-spacing:.1em
+}
+
+#exampleModalLabel
+{
+	color:#c7383b;
+	font-family:Pangolin,cursive;
+	letter-spacing:.1em;
+	text-transform:uppercase;
+	font-weight:700
+}
+
+a.modal__link
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:#2f406a;
+	padding:.25em
+}
+
+a.modal__link:hover
+{
+	color:#3fab2d;
+	background-color:rgba(0,117,184,.03)
+}
+
+div[data-modal=body]
+{
+	position:fixed;
+	height:100vh;
+	width:100vw;
+	top:0;
+	left:0;
+	background-color:rgba(121,111,111,.2);
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-transition:all .3s ease-out;
+	-o-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	visibility:hidden;
+	z-index:1000
+}
+
+div[data-modal=content]
+{
+	margin-top:-650px;
+	-webkit-transition:all .3s ease-out;
+	-o-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	z-index:1500
+}
+
+header .bg-image .text-title
+{
+	color:#fff
+}
+
+header button.btn.header__btn
+{
+	font-weight:700;
+	font-size:24px
+}
+
+header button.btn.header__btn:hover
+{
+	background-color:rgba(255,255,255,.35)
+}
+
+header .navbar-tel
+{
+	font-size:24px
+}
+
+header .navbar-tel :hover
+{
+	opacity:.55
+}
+
+header .navbar ul a
+{
+	font-size:18px
+}
+
+header .navbar ul a :hover
+{
+	color:#858485
+}
+
+.about
+{
+	margin-top:90px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+
+.about__title
+{
+	font-weight:500;
+	font-style:italic
+}
+
+.vitrina
+{
+	margin-top:90px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+
+.direction
+{
+	margin-bottom:150px
+}
+
+.direction__title
+{
+	color:#858485;
+	background:#f6f6f6;
+	background:-o-radial-gradient(circle,rgba(246,246,246,.95) 56%,rgba(159,188,228,.15) 97%);
+	background:radial-gradient(circle,rgba(246,246,246,.95) 56%,rgba(159,188,228,.15) 97%);
+	width:100%
+}
+
+.direction__title--general
+{
+	font-weight:500;
+	font-style:italic
+}
+
+.direction__row
+{
+	margin:0
+}
+
+.direction__item
+{
+	height:150px;
+	margin:10px;
+	padding:0
+}
+
+.direction__item--cottage
+{
+	background-image:url(../media/cottage.jpg)
+}
+
+.direction__item--flat
+{
+	background-image:url(../media/flat.jpg);
+	background-repeat:no-repeat;
+	background-position-y:-50px
+}
+
+.direction__item--house-hold
+{
+	background-image:url(../media/house-hold.jpg);
+	background-repeat:no-repeat;
+	background-position-y:-100px
+}
+
+.direction__item--water-analysis
+{
+	background-image:url(../media/water-analysis.jpg)
+}
+
+.direction__item--protection-of-engineering-networks
+{
+	background-image:url(../media/protection-of-engineering-networks.jpg)
+}
+
+.direction__item--installing-purifiers
+{
+	background-image:url(../media/installing-purifiers.jpg);
+	background-repeat:no-repeat;
+	background-size:contain
+}
+
+.direction__item--small-business
+{
+	background-image:url(../media/small-business.jpg)
+}
+
+.direction__item--for-enterprises
+{
+	background-image:url(../media/for-enterprises.jpg);
+	background-repeat:no-repeat;
+	background-position-y:-50px
+}
+
+.direction__item--for-heat-and-power-industry
+{
+	background-image:url(../media/for-heat-and-power-industry.jpg);
+	background-repeat:no-repeat;
+	background-position-y:-150px
+}
+
+.direction__link
+{
+	background-color:rgba(213,219,221,.35)
+}
+
+#carouselExampleSlidesOnly img
+{
+	height:50px
+}
+
+#carouselExampleSlidesOnly .carousel__inner
+{
+	margin:25px auto
+}
+
+.fa-play:before
+{
+	margin-left:.3rem
+}
+
+.step
+{
+	list-style:none;
+	margin:0
+}
+
+.step-element
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	padding:1rem 0
+}
+
+.step-number
+{
+	position:relative;
+	width:7rem;
+	-ms-flex-negative:0;
+	flex-shrink:0;
+	text-align:center
+}
+
+.step-number .number
+{
+	color:#bfc5ca;
+	background-color:#eaeff4;
+	font-size:1.5rem;
+	width:48px;
+	height:48px;
+	line-height:48px
+}
+
+.number
+{
+	display:-webkit-inline-box;
+	display:-ms-inline-flexbox;
+	display:inline-flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	width:38px;
+	border-radius:10rem
+}
+
+.step-number::before
+{
+	content:'';
+	position:absolute;
+	left:50%;
+	top:48px;
+	bottom:-2rem;
+	margin-left:-1px;
+	border-left:2px dashed #eaeff4
+}
+
+.step .step-element:last-child .step-number::before
+{
+	bottom:1rem
+}
+
+.conection
+{
+	height:100vh;
+	margin-top:90px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+
+.conection__title
+{
+	font-weight:500;
+	font-style:italic
+}
+
+section.contacts
+{
+	height:100vh
+}
+
+section.contacts__title
+{
+	font-weight:500;
+	font-style:italic
+}
+
+section.contacts button.btn
+{
+	font-weight:700;
+	background-color:#3fab2d;
+	border:2px solid #3fab2d;
+	color:#fff
+}
+
+section.contacts button.btn:hover
+{
+	opacity:.75
+}
+
+.analysis__intro
+{
+	text-align:left
+}
+
+.analysis__list
+{
+	list-style-type:none;
+	margin-top:135px
+}
+
+.analysis__list-item
+{
+	font-size:1.35em;
+	color:#fff;
+	text-transform:uppercase;
+	margin-bottom:.5em
+}
+
+.analysis__list-item::before
+{
+	content:url(../media/analysis/icon-check.png);
+	margin-right:1em
+}
+
+img[data-analysis=img]
+{
+	max-width:650px;
+	float:right;
+	margin:0 0 25px 25px
+}
+
+@font-face
+{
+	font-family:Jingleberry;
+	font-display:swap;
+	src:url(fonts/Jingleberry.woff) format("woff"),url(fonts/Jingleberry.woff2) format("woff2"),url(fonts/Jingleberry.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face
+{
+	font-family:Raleway-Bold;
+	font-display:swap;
+	src:url(fonts/Raleway-Bold.woff) format("woff"),url(fonts/Raleway-Bold.woff2) format("woff2"),url(fonts/Raleway-Bold.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face
+{
+	font-family:Raleway-Regular;
+	font-display:swap;
+	src:url(fonts/Raleway-Regular.woff) format("woff"),url(fonts/Raleway-Regular.woff2) format("woff2"),url(fonts/Raleway-Regular.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face
+{
+	font-family:Raleway-MediumItalic;
+	font-display:swap;
+	src:url(fonts/Raleway-MediumItalic.woff) format("woff"),url(fonts/Raleway-MediumItalic.woff2) format("woff2"),url(fonts/Raleway-MediumItalic.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face
+{
+	font-family:Raleway-Thin;
+	font-display:swap;
+	src:url(fonts/Raleway-Thin.woff) format("woff"),url(fonts/Raleway-Thin.woff2) format("woff2"),url(fonts/Raleway-Thin.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal
+}
+.service-text {
+	text-align: left;
+	border-right-color: #0075b8;
+	border-right-style: solid;
+	border-right-width: 3px;
+	padding-right: 10px;
+	position:relative;
+	padding-bottom: 80px;
+	display:block;
+}
+
+a.btn.service {
+	position: absolute;
+	bottom: 0;
+	width: 94%;
+}
+h4.text-center.service {
+	color: #0075b8;
+	font-weight: 500;
+}
+@media (max-width:375px) {
+	header #intro video
+	{
+		display:none
+	}
+	
+	header .mask
+	{
+		background:-o-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+		background:linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%)
+	}
+	
+	.about
+	{
+		margin-top:50px
+	}
+	
+	.direction
+	{
+		margin-top:0px
+	}
+	
+	section.partners
+	{
+		margin-top:0px
+	}
+	
+	#carouselExampleSlidesOnly img
+	{
+		margin:15px auto
+	}
+	
+	.conection
+	{
+		margin-top:150px;
+		margin-bottom:150px
+	}
+	
+	section.contacts
+	{
+		margin-top:0px
+	}
+	.service-text {
+		border-right-style: none;
+
+
+	}
+}
+
+/*@media (max-height:375px) {
+	.about
+	{
+		margin-top:250px
+	}
+	
+	.direction
+	{
+		margin-top:350px
+	}
+	
+	section.partners
+	{
+		margin-top:350px
+	}
+	
+	#carouselExampleSlidesOnly img
+	{
+		margin:15px auto
+	}
+	
+	.conection
+	{
+		margin-top:250px
+	}
+	
+	section.contacts
+	{
+		margin-top:250px
+	}
+}
+*/
+@media (max-width:544px) { 
+	.service-text {
+		border-right-style: none;
+		padding-bottom: 10em;
+
+	}
+	.about
+	{
+		margin-top:50px
+	}
+}
+
+.direction__item--flat
+{
+	background-image:url(../media/flat.webp)
+}
+
+.direction__item--house-hold
+{
+	background-image:url(../media/house-hold.webp)
+}
+
+.direction__item--water-analysis
+{
+	background-image:url(../media/water-analysis.webp)
+}
+
+.direction__item--protection-of-engineering-networks
+{
+	background-image:url(../media/protection-of-engineering-networks.webp)
+}
+
+.direction__item--installing-purifiers
+{
+	background-image:url(../media/installing-purifiers.webp)
+}
+
+.direction__item--small-business
+{
+	background-image:url(../media/small-business.webp)
+}
+
+.direction__item--for-enterprises
+{
+	background-image:url(../media/for-enterprises.webp)
+}
+
+.direction__item--for-heat-and-power-industry
+{
+	background-image:url(../media/for-heat-and-power-industry.webp)
+}
+
+.card{
+	height: 100%;
+	transition: 0.3s;
+}
+.card:hover{
+	box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.card-text{
+	font-size: 0.9rem;
+}
+.flex-1{
+	flex: 1 auto;
+}
+.h-50{
+	height:  50%;
+}
+.h-70{
+	height:  70%;
+}
+.h-30{
+	height:  30%;
+}
+.h-100{
+	height: 100%;
+}
+.p_new-1{
+	padding: 1rem;
+}
+.product-category-optionlist{
+	font-size:  1.2rem;
+	line-height: 3rem;
+}
+
+.table>:not(caption)>*>* {
+	padding: 0.5rem!important;
+}
+
+.products-table td:last-child{
+	text-align: center;
+}
+
+.g_modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 25px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.g_modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.g_close {
+}
+
+.g_close:hover,
+.g_close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+#gir {
+position:fixed;
+top:0;
+left:0;
+background-image:url('/media/gerljanda1.png');
+height:36px;
+width:100%;
+overflow:hidden;
+z-index:99
+}  
+#nums_1 {padding:100px}  
+.gir_1 {background-position: 0 0}  
+.gir_2 {background-position: 0 -36px}  
+.gir_3 {background-position: 0 -72px} 

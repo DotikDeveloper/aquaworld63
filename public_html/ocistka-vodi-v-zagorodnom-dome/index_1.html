@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '882813375990601');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=882813375990601&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var ENV = {"lang":{"lang":"ru_RU","languageCode":"ru","countryCode":"RU"},"browser":{"name":"Firefox","version":"49.0","engine":"Gecko","engineVersion":"49.0","osFamily":"Windows","osVersion":"10.0","isMobile":false,"isBrowser":true,"cssPrefix":"Moz"},"hosts":{"api":{"maps":"https://yandex.ru/maps/","statCounter":"https://yandex.ru/clck/"}},"userKey":"1478944406150"};
+        (function (browser) {
+            browser.documentMode = document.documentMode;
+            browser.isIE = (browser.name == 'MSIE' || browser.name == 'IEMobile');
+            browser.oldIE = (browser.name == 'MSIE' && browser.documentMode < 9);
+            browser.isEdge = (browser.engine == 'Edge');
+            var isPointerBrowser = browser.engine == 'Edge' ||
+                (browser.name == 'MSIE' && browser.documentMode >= 10 && browser.osVersion > 6.1) ||
+                (browser.name == 'IEMobile' && browser.engineVersion >= 6);
+            if (isPointerBrowser) {
+                browser.eventMapper = 'pointer';
+            } else if (browser.oldIE) {
+                browser.eventMapper = 'oldIE';
+            } else {
+                browser.eventMapper = 'touchMouse';
+            }
+            browser.androidBrokenBuild = browser.name == "AndroidBrowser" && browser.engineVersion == "534.30";
+
+            var pendingMessages = [],
+                onMessage = function (e) {
+                    pendingMessages.push(e.data);
+                };
+
+            browser.flushMessages = function (callback) {
+                if (browser.oldIE) {
+                    window.detachEvent('onmessage', onMessage)
+                } else {
+                    window.removeEventListener('message', onMessage, false);
+                }
+
+                for (var i = 0; i < pendingMessages.length; i++) {
+                    callback(pendingMessages[i]);
+                }
+            };
+
+            if (browser.oldIE) {
+                window.attachEvent('onmessage', onMessage)
+            } else {
+                window.addEventListener('message', onMessage, false);
+            }
+        })(ENV.browser);
+    </script>
+    <script type="text/javascript" src="inception-1474026113377.js"></script>
+
+<link media="all" href="index_1.css" type="text/css" rel="stylesheet">
+</head>
+<body><ymaps class="controller"><ymaps class="model"><ymaps><div class="gotoymaps">
+    
+        <div class="gotoymaps__icon"></div>
+        
+            <div class="gotoymaps__text"><div class="gotoymaps__text-container"><ymaps>Открыть в Яндекс.Картах</ymaps></div></div>
+        
+    
+</div></ymaps></ymaps></ymaps></body>
+</html>

@@ -1,0 +1,5 @@
+[Wed Nov 21 17:51:52 2018] [error] [client 183.110.224.126:58140] AH01797: client denied by server configuration: /home/a/azgedot5/aquaworld63.ru/public_html/wp-config.php.save
+[Wed Nov 21 17:52:37 2018] [error] [client 183.110.224.126:11526] AH01797: client denied by server configuration: /home/a/azgedot5/aquaworld63.ru/public_html/wp-config.php.bak
+[Wed Nov 21 17:53:22 2018] [error] [client 183.110.224.126:25210] AH01797: client denied by server configuration: /home/a/azgedot5/aquaworld63.ru/public_html/wp-config.php.old
+[Wed Nov 21 17:53:38 2018] [error] [client 183.110.224.126:29676] AH01797: client denied by server configuration: /home/a/azgedot5/aquaworld63.ru/public_html/wp-config.php.orig
+[Wed Nov 21 17:54:08 2018] [error] [client 183.110.224.126:37930] AH01797: client denied by server configuration: /home/a/azgedot5/aquaworld63.ru/public_html/wp-config.php.original
